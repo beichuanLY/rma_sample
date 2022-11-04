@@ -1,5 +1,6 @@
 # rma_sample
-This is just a memo for me, not assure that codes would work.
+This is just a memo for me, not assure that the code would work.
+Output differed from those in Sabaie et al.(2021), suggesting that procedures described here were not coincident to their methods.(See output.png and https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-021-03993-3/MediaObjects/41598_2021_3993_MOESM1_ESM.docx)
 
 # How to run
 1. Create a folder named "GSE53987" under the root directory (path should be "C:\GSE53987")
