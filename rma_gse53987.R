@@ -1,12 +1,9 @@
-# affyライブラリを読み込む
-library(affy)
-
 # define parent directory
-dirname <- "C:\\Users\\taker\\Downloads\\bio_test2"
+dirname <- "C:\\GSE53987"
 setwd(dirname)
 
 # read file names and sample names
-filenames <- read.csv("C:\\Users\\taker\\Downloads\\bio_test.csv", header=FALSE)
+filenames <- read.csv("C:\\GSE53987\\celfilenames.csv", header=FALSE)
 samplenames <- list()
 
 
@@ -30,12 +27,10 @@ for (i in 1:dim(filenames[1])) {
   rma_data <- assign(rma_data, rma.exprs[,1])
   
   setwd(dirname)
-  
-  # write.csv(rma_data, "C:\\Users\\taker\\Downloads\\bio_test2\\bio_test.csv")
 }
 
 
-# box plotの作図
+# draw box plots
 boxplot(rma1,
         rma2,
         rma3,
